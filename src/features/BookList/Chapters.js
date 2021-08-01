@@ -98,7 +98,7 @@ class BookList extends Component {
                       <Accordion.Body>
                         <ul>
                           {this.state.subCategories.map((obj, index) => (
-                            <li key={obj.id}>{obj.title}</li>
+                            <li key={obj.id}><b>{obj.title}</b> - {obj.status.replace("_", " ")}</li>
                           ))}
                         </ul>
                       </Accordion.Body>
